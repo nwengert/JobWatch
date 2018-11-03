@@ -1,0 +1,18 @@
+html {
+  background: linear-gradient(to right,pink, red);
+}
+.App {
+  text-align: center;
+}
+button {
+  margin: 44px;
+  height: 44px;
+  width: auto;
+  color: lightgreen;
+  font-size: 33px;
+  font-weight: bold;
+  background-color: gray;
+}
+button:hover{
+  background-color: black;
+}
