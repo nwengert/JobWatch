@@ -1,18 +1,75 @@
 html {
-  background: linear-gradient(to right,pink, red);
+  background: linear-gradient(to right,#1AAB8A, #fff,#fff, #1AAB8A);
 }
 .App {
   text-align: center;
 }
-button {
-  margin: 44px;
-  height: 44px;
-  width: auto;
-  color: lightgreen;
-  font-size: 33px;
-  font-weight: bold;
-  background-color: gray;
+body:before{
+  content:'';
+  height:100%;
+  display:inline-block;
+  vertical-align:middle;
+}
+button{
+  margin-top: 10%;
+  background:#1AAB8A;
+  color:#fff;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1.6em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+  border-radius: 5px;
+
+  animation-name: dropAndBounce;
+  animation-duration: 0.8s;
 }
 button:hover{
-  background-color: black;
+  background:#fff;
+  color:#1AAB8A;
+}
+button:before,button:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #1AAB8A;
+  transition:400ms ease all;
+}
+button:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+button:hover:before,button:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+@keyframes dropAndBounce {
+  0% {
+      opacity: 0;
+      transform: translateY(-96px);
+  }
+  33% {
+      transform: translate(0);
+  }
+  55% {
+      transform: translateY(-22px);
+  }
+  70% {
+      transform: translate(0);
+  }
+  88% {
+      transform: translateY(-9px);
+  }
+  100%{
+      transform: translate(0);
+      opacity: 1;
+  }
 }

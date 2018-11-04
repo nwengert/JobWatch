@@ -16,7 +16,7 @@ class App extends Component {
     'https://www.linkedin.com/company/lucidsoftware/jobs/'
     ]
     for(let i = 0; i < url.length; i++) {
-      setTimeout(() => window.open(url[i], '_blank'), 2000);
+      window.open(url[i], '_blank')
     }
   }
   render() {
