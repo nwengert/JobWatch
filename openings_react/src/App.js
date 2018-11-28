@@ -13,7 +13,11 @@ class App extends Component {
     //  RedOlive
     'https://www.redolive.com/jobs',
     //  Lucid
-    'https://www.linkedin.com/company/lucidsoftware/jobs/'
+    'https://www.linkedin.com/company/lucidsoftware/jobs/',
+    //  BambooHR
+    'https://company.bamboohr.com/jobs/',
+    //  USANA
+    'https://www.linkedin.com/company/usana-health-sciences/jobs/'
     ]
     for(let i = 0; i < url.length; i++) {
       window.open(url[i], '_blank')
