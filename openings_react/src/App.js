@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import Investments from './Investments';
 
 class App extends Component {
   render() {
@@ -8,6 +9,8 @@ class App extends Component {
         <button 
           onClick={ (e) => {
             const primerosURL = [
+              // Canyons School District Substituting
+              'https://sub.aesoponline.com/Substitute/Home',
               // Craigslist Gigs
               'https://saltlakecity.craigslist.org/d/gigs/search/ggg',
               //  LDS Church
@@ -42,6 +45,9 @@ class App extends Component {
                 window.open(otrosURL[i], '_blank')
               }
           }}>Otros</button>
+
+        <Investments />
+
       </div>
 
     );
