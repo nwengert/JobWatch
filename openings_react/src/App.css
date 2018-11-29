@@ -10,8 +10,9 @@ body:before{
   display:inline-block;
   vertical-align:middle;
 }
+
 button{
-  margin-top: 10%;
+  margin: 10% 5% 5% 0%;
   background:#1AAB8A;
   color:#fff;
   border:none;
