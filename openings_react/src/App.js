@@ -1,55 +1,22 @@
 import React, { Component } from 'react';
-import './App.css';
-import Investments from './Investments';
+import './index.css';
+import Primeros from './components/Primeros';
+import Otros from './components/Otros';
+import Investments from './components/Investments';
+import RV from './components/RV';
+import Practice from './components/Practice';
+
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <button 
-          onClick={ (e) => {
-            const primerosURL = [
-              // Canyons School District Substituting
-              'https://sub.aesoponline.com/Substitute/Home',
-              // Craigslist Gigs
-              'https://saltlakecity.craigslist.org/d/gigs/search/ggg',
-              //  LDS Church
-              'https://careers.lds.org/search/public/search.aspx?lang=ENG',
-              //  MX
-              'https://data.mx.com/company#careers',
-              //  RedOlive
-              'https://www.redolive.com/jobs',
-              //  Lucid
-              'https://www.linkedin.com/company/lucidsoftware/jobs/',
-              //  BambooHR
-              'https://company.bamboohr.com/jobs/',
-              //  USANA
-              'https://www.linkedin.com/company/usana-health-sciences/jobs/'
-              ]
-              for(let i = 0; i < primerosURL.length; i++) {
-                window.open(primerosURL[i], '_blank')
-              }
-          }}>Primeros</button>
-
-        <button 
-        onClick={ (e) => {
-            const otrosURL = [
-              // Teem
-              'https://www.teem.com/careers/',
-              // Ancestry
-              'https://www.ancestry.com/corporate/careers/search-jobs?job-listings-keyword=software&sort=asc&order=LOCATION',
-              // Mavenlink
-              'https://www.linkedin.com/jobs/search/?distance=25&f_C=362958&f_E=1%2C2&f_L=us%3A716&locationId=OTHERS.worldwide'
-            ]
-            for(let i = 0; i < otrosURL.length; i++) {
-                window.open(otrosURL[i], '_blank')
-              }
-          }}>Otros</button>
-
+        <Primeros />
+        <Otros />
         <Investments />
-
+        <RV />
+        <Practice />
       </div>
-
     );
   }
 }

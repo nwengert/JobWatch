@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import './App.css';
 
 class Investments extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="buttonDiv">
         <button 
           onClick={ (e) => {
             const primerosURL = [
