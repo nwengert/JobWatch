@@ -8,7 +8,7 @@ import Practice from './components/Practice';
 
 
 class App extends Component {
-  render() {
+  render(){
     const date = new Date()
     const hours = date.getHours()
     let timeOfDay
