@@ -16,7 +16,7 @@ class Primeros extends Component {
                 //  MX
                 'https://data.mx.com/company#careers',
                 //  RedOlive
-                'https://www.redolive.com/jobs',
+                'https://www.redolive.com/utah-digital-agency-jobs/',
                 //  Lucid
                 'https://www.linkedin.com/company/lucidsoftware/jobs/',
                 //  BambooHR
